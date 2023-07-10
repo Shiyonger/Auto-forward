@@ -1,0 +1,596 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<!DOCTYPE html>
+<html>
+<head>
+    <?$APPLICATION->ShowHead();?>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?$APPLICATION->ShowTitle();?></title>
+    <link href="<?=SITE_TEMPLATE_PATH?>/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="page">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__inner">
+                <div class="header__left">
+                    <div class="header__logo">
+                        <img src="<?=SITE_TEMPLATE_PATH?>/img/images/images/auto-forward_03.png" alt="">
+                        <p class="logo__text">Интернет-магазин товаров для автомобиля</p>
+                    </div>
+                </div>
+                <div class="header__center">
+                    <nav class="nav" id="nav">
+                        <a class="nav__link" href="#">Главная</a>
+                        <a class="nav__link" href="#">Отзывы</a>
+                        <a class="nav__link" href="#">Каталог</a>
+                        <a class="nav__link" href="#">Контакты</a>
+                    </nav>
+                </div>
+                <div class="header__right">
+                    <div class="header__right-one">
+                        <p class="header__phone">+7 912 608 39 64</p>
+                        <img class="phone__img" src="<?=SITE_TEMPLATE_PATH?>/img/icon-1_03.png">
+                        <button class="header__btn">Связаться</button>
+                    </div>
+                    <div class="header__right-two">
+                        <p class="sign_in">Регистрация</p>
+                        <img class="login__icon" src="<?=SITE_TEMPLATE_PATH?>/img/icon-2_03.png">
+                        <p class="log_in">Войти</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search">
+        <div class="container">
+            <div class="search__btn-one">
+                <button class="button"><span></span><span></span><span></span><p class="btn__text">Каталог</p></button>
+            </div>
+            <div class="search-input">
+                <input class="search__input" type="text" placeholder="Я ищу..">
+            </div>
+            <div class="search__btn-two">
+                <button class="button-two">Искать</button>
+            </div>
+            <div class="cart">
+                <div class="cart__img">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/images/cart_03.png">
+                </div>
+                <p class="cart__notif">1</p>
+                <p class="cart__text">Корзина</p>
+            </div>
+        </div>
+    </div>
+    <header class="mobile__header">
+        <div class="mobile__container">
+            <div class="mobile__header__toggle"><span></span><span></span><span></span></div>
+            <div class="mobile__header__login"><img class="mobile__header__img" src="<?=SITE_TEMPLATE_PATH?>/img/icon-2_03.png"></div>
+            <div class="mobile__header__logo"><img class="mobile__header__img logo" src="<?=SITE_TEMPLATE_PATH?>/img/images/images/auto-forward_03.png"></div>
+            <div class="mobile__header__search"><img class="mobile__header__img" src="<?=SITE_TEMPLATE_PATH?>/img/search_03.png"></div>
+            <div class="mobile__header__cart"><img class="mobile__header__img" src="<?=SITE_TEMPLATE_PATH?>/img/images/cart_03.png"></div>
+        </div>
+    </header>
+
+    <section class="auto__light__section">
+        <div class="auto__light__container">
+            <p class="auto__light__title">Автосвет</p>
+            <div class="auto__light">
+                <div class="auto__light__wrap">
+                    <div class="auto__light__item">
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды диалуч</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды в головной свет</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Дневные ходовые огни</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Ксенон</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы AVS</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы BOCXOD</p><p class="auto__light__text">(0)</p></div>
+                    </div>
+                    <div class="auto__light__item">
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы KOITO</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы MTF</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы NARVA</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы OSRAM</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы PHILIPS</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы разные</p><p class="auto__light__text">(0)</p></div>
+                    </div>
+                    <div class="auto__light__item">
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы АВТОСВЕТ</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы ДИАЛУЧ</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы ЛУЧ</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лампы МАЯК</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Лента светодиодная</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды</p><p class="auto__light__text">(0)</p></div>
+                    </div>
+                </div>
+                <div class="auto__light__wrap__two">
+                    <div class="auto__light__item">
+                        <div class="auto__light__flex"><p class="auto__light__text blue">12v</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">24v</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Площадка</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды CIKOO</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды AVS</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды ВОСХОД</p><p class="auto__light__text">(0)</p></div>
+                    </div>
+                    <div class="auto__light__item">
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды МАЯК</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Светодиоды разные</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Фары противотуманные</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Фары противотуманные для ВАЗ</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Фары противотуманные модельные</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Фары противотуманные светодиодные</p><p class="auto__light__text">(0)</p></div>
+                    </div>
+                    <div class="auto__light__item">
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Фары противотуманные универсальные</p><p class="auto__light__text">(0)</p></div>
+                        <div class="auto__light__flex"><p class="auto__light__text blue">Фары противотуманные универсальные DLAA</p><p class="auto__light__text">(0)</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section__catalog">
+        <div class="container catalog__two">
+            <p class="catalog__title">Каталог товаров</p>
+            <div class="sort">
+                <p class="sort__text">Сортировать по:</p>
+                <div class="sort__item">
+                    <p class="sort__item__text">названию</p>
+                    <img class="sort__img" src="<?=SITE_TEMPLATE_PATH?>/img/tick_03.png">
+                </div>
+            </div>
+            <div class="show__wrap">
+                <div class="show">
+                    <p class="show__text">Показать:</p>
+                    <div class="show__item">
+                        <p class="show__item__text">12</p>
+                        <img class="show__img" src="<?=SITE_TEMPLATE_PATH?>/img/tick_03.png">
+                    </div>
+                    <div class="view">
+                        <p class="view__text">Вид:</p>
+                        <img class="view__img" src="<?=SITE_TEMPLATE_PATH?>/img/view-1_03.png">
+                        <img class="view__img" src="<?=SITE_TEMPLATE_PATH?>/img/view-2_03.png">
+                    </div>
+                </div>
+            </div>
+            <div class="two__catalog__wrap">
+                <div class="two__catalog__item">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                    <div class="catalog__item__text">
+                        <p class="two__new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="two__new__artic">Артикул: 5184612</p>
+                        <p class="two__new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="two__quantity">
+                        <img class="two__mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                        <p class="two__quantity__text">0</p>
+                        <img class="two__mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                    </div>
+                    <div class="two__catalog__right">
+                        <img class="two__new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="two__new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="two__catalog__item">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                    <div class="catalog__item__text">
+                        <p class="two__new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="two__new__artic">Артикул: 5184612</p>
+                        <p class="two__new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="two__quantity">
+                        <img class="two__mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                        <p class="two__quantity__text">0</p>
+                        <img class="two__mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                    </div>
+                    <div class="two__catalog__right">
+                        <img class="two__new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="two__new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="two__catalog__item">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                    <div class="two__catalog__item__text">
+                        <p class="two__new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="two__new__artic">Артикул: 5184612</p>
+                        <p class="two__new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="two__quantity">
+                        <img class="two__mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                        <p class="two__quantity__text">0</p>
+                        <img class="two__mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                    </div>
+                    <div class="two__catalog__right">
+                        <img class="two__new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="two__new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="two__catalog__item last">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                    <div class="two__catalog__item__text">
+                        <p class="two__new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="two__new__artic">Артикул: 5184612</p>
+                        <p class="two__new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="two__quantity">
+                        <img class="two__mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                        <p class="two__quantity__text">0</p>
+                        <img class="two__mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                    </div>
+                    <div class="two__catalog__right">
+                        <img class="two__new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="two__new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pages">
+                <div class="pages__item first">
+                    <p class="pages__text first">1</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">2</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">3</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">4</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">5</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">6</p>
+                </div>
+                <div class="pages__item seven">
+                    <p class="pages__text">...</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">100</p>
+                </div>
+                <div class="pages__item">
+                    <p class="pages__text">Вперед</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mobile__section__new">
+        <div class="mobile__container section">
+            <h1 class="new__title">Новинки</h1>
+            <div class="new">
+                <div class="new__item">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="main/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item last">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new__second">
+                <div class="new__item sec">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item sec">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item sec">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item sec">
+                    <div>
+                        <img class="new__item__img" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-item_03.png">
+                        <p class="new__text">Фара светодиодная CH031 144W ближний свет</p>
+                        <p class="new__artic">Артикул: 5184612</p>
+                        <p class="new__price">1648 руб. / шт.</p>
+                    </div>
+                    <div class="new__flex">
+                        <img class="new__cart" src="<?=SITE_TEMPLATE_PATH?>/img/catalog-cart_03.png">
+                        <div class="quantity">
+                            <img class="mini plus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-plus_03.png">
+                            <p class="quantity__text">1</p>
+                            <img class="mini minus" src="<?=SITE_TEMPLATE_PATH?>/img/mini-minus_03.png">
+                        </div>
+                        <div class="new__heart">
+                            <img src="<?=SITE_TEMPLATE_PATH?>/img/heart_03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="new__item sec last">
+                    <div class="new__plus">
+                        <img class="big__plus" src="<?=SITE_TEMPLATE_PATH?>/img/plus_03.png">
+                        <p class="plus__title">Показать ещё 9</p>
+                        <p class="plus__text">Показано 9 из 46</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mobile__section__catalog">
+        <div class="mobile__container catalog">
+            <h1 class="section__title">Каталог товаров</h1>
+            <div class="catalog__item__wrap">
+                <div class="catalog__item">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/new-2_03.png">
+                    <h3 class="catalog__title">Новинки</h3>
+                </div>
+                <div class="catalog__item elec">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/auto-elec-2_03.png">
+                    <h3 class="catalog__title">Автоэлектрика</h3>
+                    <div class="catalog__content">
+                        <p class="item">Жгуты проводов</p>
+                        <p class="item">Колодки</p>
+                        <p class="item">Клеммы</p>
+                        <p class="item">Тумблеры</p>
+                        <p class="item">Провода</p>
+                        <p class="item">Провода АКБ</p>
+                        <p class="item">Разное</p>
+                        <p class="item">Термоусадка</p>
+                    </div>
+                </div>
+                <div class="catalog__item">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/accessories-2_03.png">
+                    <h3 class="catalog__title">Автоаксессуары</h3>
+                    <div class="catalog__content">
+                        <p class="item">Антены</p>
+                        <p class="item">Ароматизаторы</p>
+                        <p class="item">Брелоки</p>
+                        <p class="item">Брызговики</p>
+                        <p class="item">Все для детей</p>
+                        <p class="item">Газовые плиты,горелки,товары для туризма</p>
+                        <a class="more">Еще</a>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item__wrap__second">
+                <div class="catalog__item laset">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/auto_light-2_03.png">
+                    <h3 class="catalog__title">Автосвет</h3>
+                    <div class="catalog__content">
+                        <p class="item">Светодиоды диалуч</p>
+                        <p class="item">Светодиоды в головной свет</p>
+                        <p class="item">Дневные ходовые огни</p>
+                        <p class="item">Ксенон</p>
+                        <p class="item">Лампы AVS</p>
+                        <p class="item">Лампы BOCXOD</p>
+                        <p class="item">Лампы KOITO</p>
+                        <a class="more">Еще</a>
+                    </div>
+                </div>
+                <div class="catalog__item first second">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/auto_chemistry-2_03.png">
+                    <h3 class="catalog__title">Автохимия</h3>
+                    <div class="catalog__content">
+                        <p class="item">Антифриз, тосол, спец. жидкости</p>
+                        <p class="item">Жидкая резина</p>
+                        <p class="item">Зимний ассортимент</p>
+                        <p class="item">Клей, герметик, холодная сварка</p>
+                        <p class="item">Лакокрасочные материалы</p>
+                        <p class="item">Присадки</p>
+                        <p class="item">Смазки, жидкие ключи</p>
+                        <a class="more">Еще</a>
+                    </div>
+                </div>
+                <div class="catalog__item second">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/auto_electron-2_03.png">
+                    <h3 class="catalog__title">Автоэлектроника</h3>
+                    <div class="catalog__content">
+                        <p class="item">Видеорегистраторы</p>
+                        <p class="item">Камеры,мониторы</p>
+                        <p class="item">Карты памяти</p>
+                        <p class="item">Магнитолы</p>
+                        <p class="item">Акустика</p>
+                        <p class="item">Комплектующие</p>
+                        <p class="item">Парктроники</p>
+                        <p class="item">Радар-детекторы</p>
+                        <p class="item">Разное</p>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__item__wrap__third">
+                <div class="catalog__item second">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/tools-2_03.png">
+                    <h3 class="catalog__title">Инструмент</h3>
+                    <div class="catalog__content">
+                        <p class="item">Инструмент</p>
+                        <p class="item">Наборы инструмента</p>
+                        <p class="item">Отвертки</p>
+                        <p class="item">Пассатижи</p>
+                        <p class="item">Измерительный инструмент</p>
+                        <p class="item">Пневмоинструмент</p>
+                        <p class="item">Разное</p>
+                        <p class="item">Спец. инструмент</p>
+                    </div>
+                </div>
+                <div class="catalog__item second laset">
+                    <img class="catalog__img" src="<?=SITE_TEMPLATE_PATH?>/img/caps-2_03.png">
+                    <h3 class="catalog__title">Колпаки</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="left__content">
+                <div class="coll__item">
+                    <a class="coll__link">Большие скидки</a>
+                    <a class="coll__link">Новинки</a>
+                    <a class="coll__link">Автоэлектрика</a>
+                    <a class="coll__link">Автоаксессуары</a>
+                    <a class="coll__link">Автосвет</a>
+                    <a class="coll__link">Автохимия</a>
+                    <a class="coll__link">Автоэлектроника</a>
+                    <a class="coll__link">Инструмент</a>
+                    <a class="coll__link last">Спец. инструмент</a>
+                </div>
+                <div class="coll__item">
+                    <a class="coll__link">Новинки</a>
+                    <a class="coll__link">Популярные товары</a>
+                    <a class="coll__link">Распродажа</a>
+                    <a class="coll__link last">Уцененные товары</a>
+                </div>
+                <div class="coll__item lastet">
+                    <a class="coll__link">Главная</a>
+                    <a class="coll__link">Отзывы</a>
+                    <a class="coll__link">Акции</a>
+                    <a class="coll__link">Каталог</a>
+                    <a class="coll__link">Доставка</a>
+                    <a class="coll__link">Вопрос-ответ</a>
+                    <a class="coll__link">Контакты</a>
+                    <a class="coll__link last">Новости</a>
+                </div>
+            </div>
+            <div class="right__content">
+                <img class="footer__img" src="<?=SITE_TEMPLATE_PATH?>/img/footer-auto_forward_03.png">
+                <p class="footer__text">+7 912 608 39 64</p>
+                <p class="footer__text">pl@ledovskih.site</p>
+                <p class="footer__text las">Екатеринбург,ул. Сулимова,д. 50</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
